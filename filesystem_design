@@ -1,3 +1,8 @@
+// Design of a filesystem in C++
+// Author: Yilong Zhang
+// Date: 4/20/2017
+
+// use enum class rather than enum to make it more type-safe and thread safe
 enum class FileType
 {
     Regular,
@@ -25,6 +30,7 @@ class SuperBlock
         // setters and getters;
 };
 
+// virtual class, never instantiate it. To be featured by children classes.
 class Inode
 {
     protected:
