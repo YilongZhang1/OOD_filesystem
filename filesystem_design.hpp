@@ -72,6 +72,7 @@ class InodeDir : public Inode
 
 class Dentry
 {
+    // so each dir has 7 entries.
     char names[7][64];
     int inodeId[7];
 };
